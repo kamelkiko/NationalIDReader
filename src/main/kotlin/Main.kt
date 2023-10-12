@@ -1,10 +1,7 @@
 import nationalid.NationalIDReader
-import nationalid.mapper.INationalIDExtractor
-import nationalid.mapper.NationalIDExtractor
 
 fun main() {
-    val nationalIDExtractor: INationalIDExtractor = NationalIDExtractor()
-    val nationalIdReader = NationalIDReader(readln(), nationalIDExtractor)
+    val nationalIdReader = NationalIDReader(readln())
     println("Birthday: ${nationalIdReader.getYear()}/${nationalIdReader.getMonth()}/${nationalIdReader.getDay()}")
     println("Age: ${2023 - nationalIdReader.getYear()}")
     println("Year: ${nationalIdReader.getYear()}")
