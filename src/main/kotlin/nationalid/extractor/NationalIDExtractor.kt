@@ -14,10 +14,13 @@ class NationalIDExtractor(private val nationalID: String) : INationalIDExtractor
 
     override fun extractYear() = calculateYear()
 
-    private fun calculateYear() = mapFromIDToData(*YEAR_INDEXES) + calculateCentury()
+    private fun calculateYear() = mapFromIDToData(*YEAR_INDEXES) + extractCentury()
 
 
-    private fun calculateCentury(centuryCode: Int = CENTURY_INDEX) =
+    private fun extractCentury() = calculateCentury(mapFromIDToData(CENTURY_INDEX))
+
+
+    private fun calculateCentury(centuryCode: Int) =
         if (centuryCode == BASE_CENTURY_CODE) BASE_YEAR
         else ((centuryCode * CENTURY) - CENTURY) + BASE_YEAR
 
