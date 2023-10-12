@@ -7,8 +7,6 @@ interface INationalIDExtractor {
 
     fun extractYear(): Int
 
-    fun extractCentury(): Int
-
     fun extractGenderCode(): Int
 
     fun extractGovernorate(): String
