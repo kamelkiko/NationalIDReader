@@ -24,7 +24,9 @@ class NationalIDValidator(private val nationalID: String) : INationalIDValidator
     companion object {
         private const val NATIONAL_ID_PATTERN = "[^0-9]"
         private const val NATIONAL_ID_LENGTH_EXCEPTION_MSG = "National ID must be 14 numbers"
-        private const val NATIONAL_ID_FIRST_NUMBER_EXCEPTION_MSG = "National ID should start with 1 or bigger than it"
+        private const val NATIONAL_ID_FIRST_NUMBER_EXCEPTION_MSG =
+            "National ID number should start with 1 or bigger than it"
         private const val NATIONAL_ID_REQUIRE_CHARACTERS_EXCEPTION_MSG = "National ID shouldn't contain any characters"
     }
+
 }

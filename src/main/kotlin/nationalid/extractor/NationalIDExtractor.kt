@@ -58,4 +58,5 @@ class NationalIDExtractor(private val nationalID: String) : INationalIDExtractor
         private const val GENDER_INDEX = 12
         private const val UN_KNOWN_CITY_CODE = "Unknown city code"
     }
+
 }

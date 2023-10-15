@@ -52,4 +52,5 @@ class NationalIDReader(nationalID: String) {
         private const val INVALID_MONTH = "Invalid month"
         private const val INVALID_DAY = "Invalid day"
     }
+
 }

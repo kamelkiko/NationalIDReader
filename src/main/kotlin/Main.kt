@@ -11,4 +11,5 @@ fun main() {
     println("City: ${nationalIdReader.getGovernorate()}")
     println("Computer code: ${nationalIdReader.getGenerationComputerCode()}")
     println("Check digit: ${nationalIdReader.getCheckDigitOfNationalID()}")
+
 }
