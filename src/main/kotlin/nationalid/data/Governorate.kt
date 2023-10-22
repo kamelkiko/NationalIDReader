@@ -1,4 +1,4 @@
-package nationalid.model
+package nationalid.data
 
 object Governorate {
     private val code = mapOf(

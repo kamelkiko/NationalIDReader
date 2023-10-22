@@ -1,4 +1,4 @@
-package nationalid.model
+package nationalid.domain.entity
 
 open class NationalIDException(message: String?) : Exception(message)
 

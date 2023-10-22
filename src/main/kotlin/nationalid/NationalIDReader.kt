@@ -1,8 +1,8 @@
 package nationalid
 
-import nationalid.extractor.INationalIDExtractor
-import nationalid.extractor.NationalIDExtractor
-import nationalid.model.NationalIDFormatException
+import nationalid.domain.extractor.INationalIDExtractor
+import nationalid.domain.extractor.NationalIDExtractor
+import nationalid.domain.entity.NationalIDFormatException
 import nationalid.util.INationalIDValidator
 import nationalid.util.NationalIDValidator
 

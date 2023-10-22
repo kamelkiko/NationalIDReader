@@ -1,6 +1,6 @@
-package nationalid.extractor
+package nationalid.domain.extractor
 
-interface INationalIDExtractor {
+internal interface INationalIDExtractor {
     fun extractMonth(): Int
 
     fun extractDay(): Int

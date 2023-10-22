@@ -1,5 +1,5 @@
 package nationalid.util
 
-interface INationalIDValidator {
+internal interface INationalIDValidator {
     fun validate()
 }

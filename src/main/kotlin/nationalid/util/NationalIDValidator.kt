@@ -1,8 +1,8 @@
 package nationalid.util
 
-import nationalid.model.NationalIDFormatException
+import nationalid.domain.entity.NationalIDFormatException
 
-class NationalIDValidator(private val nationalID: String) : INationalIDValidator {
+internal class NationalIDValidator(private val nationalID: String) : INationalIDValidator {
     override fun validate() {
         require(nationalID.length == 14) {
             throw NationalIDFormatException(NATIONAL_ID_LENGTH_EXCEPTION_MSG)

@@ -1,10 +1,10 @@
-package nationalid.extractor
+package nationalid.domain.extractor
 
-import nationalid.model.Governorate
-import nationalid.model.UnknownCityException
+import nationalid.data.Governorate
+import nationalid.domain.entity.UnknownCityException
 
 
-class NationalIDExtractor(private val nationalID: String) : INationalIDExtractor {
+internal class NationalIDExtractor(private val nationalID: String) : INationalIDExtractor {
 
     override fun extractMonth() = mapFromIDToData(*MONTH_INDEXES)
 
